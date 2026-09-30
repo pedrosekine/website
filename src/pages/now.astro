@@ -1,0 +1,32 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+import { NOW } from "@consts";
+---
+
+<PageLayout title={NOW.TITLE} description={NOW.DESCRIPTION}>
+  <Container>
+    <div class="space-y-10">
+      <div class="animate font-semibold text-black dark:text-white">
+        Now
+      </div>
+      <article class="animate space-y-4">
+        <p class="text-sm opacity-75">
+          Last updated: September 2026
+        </p>
+        <p>
+          I've just finished my MSc in Innovation and Product Management at the University of Applied Sciences Upper Austria. The thesis, on designing consumer electronics that last, is done.
+        </p>
+        <p>
+          In October my Master's in Interdisciplinary Computing at IT:U in Linz goes into its second year; it runs until 2027.
+        </p>
+        <p>
+          With classmates, I'm building linc, a student consultancy that helps companies adopt agentic AI tools, from scoping use cases to implementation.
+        </p>
+        <p>
+          And Cup Club keeps the IT:U cohort in coffee, with nineteen members on the roster.
+        </p>
+      </article>
+    </div>
+  </Container>
+</PageLayout>

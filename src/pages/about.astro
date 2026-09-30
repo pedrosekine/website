@@ -1,0 +1,39 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import Container from "@components/Container.astro";
+import Link from "@components/Link.astro";
+import { ABOUT } from "@consts";
+---
+
+<PageLayout title={ABOUT.TITLE} description={ABOUT.DESCRIPTION}>
+  <Container>
+    <div class="space-y-10">
+      <div class="animate font-semibold text-black dark:text-white">
+        About
+      </div>
+      <article class="animate space-y-4">
+        <p>
+          I'm Pedro Marin Sekine — Brazilian, based in Linz, Austria, working at the intersection of design, technology, and communication.
+        </p>
+        <p>
+          I studied three years of electrical engineering before switching to Public Relations at the University of São Paulo. Communication became the foundation: how to tell a story, frame an idea, and read an audience. Technology and design came back in later — not as separate disciplines, but as complementary ways of shaping how people experience things.
+        </p>
+        <p>
+          I've spent six years in product, innovation and commercial roles in Brazil and Austria: as an early employee at Labenu, a São Paulo ed-tech startup, where I built two of its products from conception; as Innovation Manager at KTM; and most recently as Global Product Manager at Lenzing, owning a lyocell fibre portfolio from concept to end of life. The details are on the <Link href="/work">work</Link> page.
+        </p>
+        <p>
+          In September 2026 I completed an MSc in Innovation and Product Management at the University of Applied Sciences Upper Austria in Wels. My thesis, <strong>Adaptable Design for Product Longevity</strong>, asks how consumer electronics can be built so that one worn-out part doesn't retire the whole device, with AR smart glasses as the lead case.
+        </p>
+        <p>
+          I'm now in a second Master's, in Interdisciplinary Computing (Designing Interactions) at <Link href="https://it-u.at" external>IT:U</Link> in Linz, as part of its founding cohort, where I'm class representative. Alongside it I co-founded <strong>linc</strong>, a student consultancy helping companies adopt agentic AI tools, and I run <strong>Cup Club</strong>, the cohort's coffee subscription.
+        </p>
+        <p>
+          I'm not the best in the world at any one of these. The combination is the point: design thinking, technical capability and communication instinct reinforce each other.
+        </p>
+        <p>
+          I speak Portuguese, English, German, and Spanish.
+        </p>
+      </article>
+    </div>
+  </Container>
+</PageLayout>
